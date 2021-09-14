@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+    height: 70px;
+    line-height: 1.8;
+    padding-right: 1em;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 1.6em 1em;
+    
+}
+
+nav ul li a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: black;
+    color: coral;
+}
+
+.brand {
+    flex-grow: 8;
+}
+
+.brand a {
+    display: block;
+    color: white;
+    padding-left: 1em;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.brandName {
+    color: coral;
+}
+
+.fas {
+    font-size: x-large;
+    padding-top: .1em;
+}
+
+/* Container */
+
+.container {
+    
+    width: 100%;
+}
+
+aside {
+    background-color: black;
+    height: 100vh;
+    width: 15em;
+    display: none;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    font-size: x-large;
+    padding: .3em 0;
+}
+
+aside a {
+    color: coral;
+}
+
+.fab {
+    padding: 0 .5em;
+    margin-top: 1em;
+    color: white;
+}
+
+aside ul li:hover {
+    text-decoration: underline ;
+}
+
+/* Main*/
+
+main {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+
+/* Menu bar */
+
+.menu-bar {
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.fa-bars {
+    color: white;
+    font-size: xx-large;
+    float: right;
+    padding-right: .5em;
+}
+
+.fa-bars:hover {
+    color: coral;
+}
+
+/* Tech Section */
+
+.technology {
+    
+}
+
+.tech {
+    display: inline;
+    width: 44%;
+    float: left;
+    
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+#t1, #t2, #t3 {
+    margin: .5em;
+}
+
+#t2 {
+    
+}
+
+
+
+
+
+.clearfix {
+    clear: both;
+    visibility: hidden;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 1080px) {
+
+  .container {
+      display: grid;
+    grid-template-columns: auto 15em;
+  }
+
+  .menu-bar {
+      display: none;
+  }
+
+  aside {
+      display: block;
+  }
+
+  .t1 {
+    flex-grow: ;
+  }
+
+  .t2 {
+      flex-grow: ;
+  }
+}
